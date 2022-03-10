@@ -1,0 +1,24 @@
+// Lab 7 - While-Loops.cpp : This file contains the 'main' function. Program execution begins and ends there.
+#include <iostream> 
+#include <fstream> 
+#include <iomanip> 
+
+using namespace std;
+
+int main() {
+	int salary;
+	int year = 1;
+	double salary = 20000;
+
+	cout << "Year" << right << fixed << setw(7) << "Salary \n";
+	cout << "-------------------\n";
+
+	while (salary <= 50000) {
+		cout << year << right << fixed << setw(7) <<  salary << '\n';
+		salary = salary +(salary * .1);
+		year++;
+	}
+
+	system("pause");
+	return 0;
+}
