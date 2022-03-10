@@ -1,0 +1,33 @@
+
+/*Johanna Johnh
+ Computer Science I - Mika Morgan
+ Lab #7 - While-Loops
+ 03.10.2022
+*/
+
+#include <iostream> 
+#include <fstream> 
+#include <iomanip> 
+
+using namespace std;
+
+int main() {
+	
+	int year = 1;
+	double sal = 20000;
+
+	cout << fixed << setprecision(2); // Fixed && Setprecision so its going to inlcude the pennies as well.
+	cout << "Year\t\tSalary \n"; // Next 3 lines => Printing out what the beginning should look like before doing anything
+	cout << "-----------------------------\n";
+	cout << year << "\t\t" << sal << '\n';
+
+	while (sal <= 50000)
+	{
+		sal = sal + (sal * .1); // Adding 10 Procent for each time the while loop runs
+		year++; //adding 1 to each year 
+		cout << year << "\t\t" << sal << '\n'; //printing it out to the Yearly-Salary-Table
+	}
+
+	system("pause");
+	return 0;
+}
